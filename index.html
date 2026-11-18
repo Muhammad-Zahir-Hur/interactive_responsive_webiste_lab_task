@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+
+    </style>
+</head>
+
+<body id="body">
+    <header>
+        <nav>
+            <div>
+                <p class="logo">M.Zahir</p>
+            </div>
+            <div>
+                <a id="show-menu" style="padding: 20px; cursor: pointer;">☰</a>
+                <div class="nav-links" id="nav-links">
+                    <a id="dark-mode" class="btn-plan" class="nav-link" style="cursor: pointer;">🌙</a>
+                    <a href="" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills </a>
+                    <a href="" class="nav-link">Contact Me</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+
+            <img src="./images/me.jpg" alt="My picture" class="hero-image">
+            <h1>Hello It is Muhammad Zahir</h1>
+            <p>Software Engineer at ABC company</p>
+            <div style="display: flex; gap: 10px; margin: auto; width: fit-content;">
+                <a href="#skills"><button class="btn-primary" style="display:block;margin:auto;">view
+                        skills</button></a>
+                <button class="btn-secondary" id="learn-more-btn"> Learn More/less</button>
+
+            </div>
+
+        </section>
+        <div class="hidden learn-more-modal" id="learn-more-modal">
+            <h2 style="margin-bottom: 10px;">Learn more about me</h2>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium soluta nisi odio ratione <br>
+                quibusdam nulla in doloribus laudantium aperiam sequi quisquam sed iste exercitationem, dignissimos
+                <br>
+                officiis commodi quam id aspernatur ducimus. Hic, molestiae eligendi repellendus numquam quaerat
+                minima in assumenda.
+            </p>
+        </div>
+        <section id="about">
+            <h1>About Me</h1>
+            <p>Muhammad Zahir is a student of software engineering, 1st semester at University of Engineering and
+                Technology, Taxila.</p>
+        </section>
+        <section id="skills">
+            <h1>My Skills</h1>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <img src="./images/html.png" alt="HTML Icon">
+                    <h2>HTML</h2>
+                    <p class="skill-p">Proficient in creating structured and <br> semantic web pages using HTML5.</p>
+                </div>
+                <div class="skill-card">
+                    <img src="./images/css.png" alt="CSS Icon">
+                    <h2>CSS</h2>
+                    <p class="skill-p">Skilled in styling web pages with CSS3,<br> including responsive design and
+                        animations.</p>
+                </div>
+                <div class="skill-card">
+                    <img src="./images/javascript.png" alt="JavaScript Icon">
+                    <h2>Programming</h2>
+                    <p class="skill-p">Experienced in C++, Javascript, and Python</p>
+                </div>
+
+            </div>
+        </section>
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <p>If you would like to get in touch, please feel free to reach out via email or connect with me on
+                LinkedIn.</p>
+
+
+            <form action="" id="contact-form" style="color:black" novalidate>
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" id="name">
+                    <input type="email" placeholder="Your Email" id="email">
+                    <textarea name="message" placeholder="Your Message" id="message"
+                        style="width: 100%; height: 120px;margin-bottom: 10px;"></textarea>
+                    <button class="btn-secondary" type="submit">Send Message</button>
+                </div>
+                <div id="feedback-message" style="margin-top: 10px; font-weight: bold;"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Muhammad Zahir. All rights reserved.</p>
+    </footer>
+</body>
+<script src="./script.js"></script>
+
+</html>

@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: inherit;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    max-width: 900px;
+    margin: auto;
+}
+
+.logo {
+    font-size: large;
+    font-weight: bold;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background:
+        #37a4ba;
+
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger {
+    font-size: 30px;
+}
+
+
+.hero-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+section {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+h1,
+p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.skills-container {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-card {
+    background-color:
+        #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+footer {
+    background-color:
+        #37a4ba;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin: auto;
+    width: inherit;
+    display: block;
+}
+
+.skill-p {
+    text-align: center;
+    color:
+        #a5a1a1;
+    font-size: 10px;
+}
+
+a {
+    color: white;
+}
+
+a:visited {
+    color:
+        #ebeaea;
+}
+
+section h1 {
+    margin-bottom: 20px;
+}
+
+#show-menu {
+    display: none;
+}
+
+/*set styles for mobile and tablet devices*/
+@media (max-width: 768px) {
+    #show-menu {
+        display: inline;
+    }
+
+    section {
+        margin: 0px 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #nav-links {
+        display: none;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    background-color:
+        #37a4ba;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border: 1px dotted #000000;
+}
+
+.btn-plane {
+    padding: -16px 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+
+}
+
+.dark {
+    color:
+        #f4f4f4;
+    background-color:
+        #000000;
+}
+
+.learn-more-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    background-color:
+        #37a4ba;
+
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+
+}
+
+.shown {
+    display: flex !important;
+}
+
+.hidden {
+    display: none;
+}
